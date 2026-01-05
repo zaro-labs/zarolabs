@@ -38,7 +38,7 @@ export default function Footer() {
           <h4>Contact</h4>
           <ul className="footer-links">
             {/* <li><span className="footer-link">Inquire</span></li> */}
-            <li><span className="footer-link">Email</span></li>
+            {/* <li><span className="footer-link">Email</span></li> */}
             <li><span className="footer-link">LinkedIn</span></li>
           </ul>
         </div>
