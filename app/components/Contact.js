@@ -23,14 +23,14 @@ export default function Contact() {
     try {
       // Replace these with your actual EmailJS credentials
       const result = await emailjs.send(
-        'service_iq50ply',        // Replace with your Service ID
-        'template_4ltm9uh',       // Replace with your Template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,        // Replace with your Service ID
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,       // Replace with your Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        'DOo_-w0czR8uQX_2N'         // Replace with your Public Key
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY         // Replace with your Public Key
       );
 
       setSubmitted(true);
