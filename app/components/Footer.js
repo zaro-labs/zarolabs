@@ -43,11 +43,19 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-section">
-          <div className="logo">ZaroLabs®</div>
+          <img
+            src="/logo.png"
+            alt="Zaro Labs"
+            style={{
+              height: '28px',
+              opacity: 1.0,
+            }}
+          />
           <p style={{ color: '#9ca3af', fontSize: '0.875rem', marginTop: '1rem' }}>
             Building the future, one line at a time.
           </p>
         </div>
+
       </div>
       <div className="footer-bottom">
         <p>© 2026 ZaroLabs. All rights reserved.</p>
